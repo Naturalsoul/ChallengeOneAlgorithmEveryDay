@@ -1,5 +1,7 @@
 package JavaAlgorithms.Algorithms;
 
+import java.util.ArrayList;
+
 /**
  * Chunkey Monkey make an array to a multidimensional array.
  */
@@ -12,15 +14,20 @@ public class ChunkeyMonkey {
         this.chunkey = chunkey;
     }
 
-    public int[][] doChunkey () {
-        int[][] multi = new int[chunkey][chunkey];
+    public ArrayList<int[]> doChunkey () {
+        ArrayList<int[]> multi = new ArrayList<>();
+        int[] intArr = new int[chunkey];
         int p = 0;
 
-        for (int i = 0; i < chunkey; i++) {
-            for (int k = 0; k < chunkey; k++) {
-                multi[i][k] = arr[p];
+        for (int item : arr) {
+            intArr[p] = item;
+
+            if (p + 1 == chunkey) {
+                multi.add(intArr);
+                intArr = new int[intArr.length];
+                p = 0;
+            } else
                 p++;
-            }
         }
 
         return multi;
