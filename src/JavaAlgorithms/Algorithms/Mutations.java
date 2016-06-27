@@ -7,18 +7,17 @@ package JavaAlgorithms.Algorithms;
 
 public class Mutations {
     private String first;
-    private String second;
+    private String[] second;
 
-    public Mutations (String first, String second) {
-        this.first = first;
-        this.second = second;
+    public Mutations (String[] param) {
+        this.first = param[0].toLowerCase();
+        this.second = param[1].toLowerCase().split("");
     }
 
     public boolean checkMutation () {
         boolean flag = true;
-        String[] secondArr = second.toLowerCase().split("");
 
-        for (String letter : secondArr)
+        for (String letter : second)
             flag = first.contains(letter);
 
         return flag;
