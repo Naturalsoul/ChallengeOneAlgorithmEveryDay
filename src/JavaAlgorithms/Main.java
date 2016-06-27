@@ -1,6 +1,7 @@
 package JavaAlgorithms;
 
 import JavaAlgorithms.Algorithms.ChunkeyMonkey;
+import JavaAlgorithms.Algorithms.Mutations;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -47,6 +48,24 @@ public class Main {
 
                     break;
 
+                case 2:
+                    System.out.println("The Mutations algorithm take two Strings. The second parameter is");
+                    System.out.println("the letters that I want to know if the first string contains.");
+                    System.out.print("\nEnter the first String: ");
+
+                    String[] parameters = new String[2];
+
+                    reader.nextLine();
+                    parameters[0] = reader.nextLine();
+
+                    System.out.print("And the second, pls: ");
+                    parameters[1] = reader.nextLine();
+
+                    Mutations mut = new Mutations(parameters);
+
+                    System.out.println("The result is: " + mut.checkMutation());
+                    break;
+
                 case 9:
                     System.out.println("\nSee ya!!");
                     System.exit(0);
@@ -59,6 +78,7 @@ public class Main {
         System.out.println("--------------------");
         System.out.println("Hi!! :D. Choose an algorithm!");
         System.out.println("1) Chunkey Monkey.");
+        System.out.println("2) Mutations.");
         System.out.println("9) Thanks for the algorithms. Good Bye!!");
         System.out.println("--------------------");
         System.out.print("Choose an option: ");
