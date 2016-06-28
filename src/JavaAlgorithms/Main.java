@@ -31,7 +31,7 @@ public class Main {
 
             switch (option) {
                 case 1:
-                    System.out.println("The Chunkey Monkey algorithm take an array and a chunk parameter");
+                    System.out.println("The Chunkey Monkey algorithm takes an array and a chunk parameter");
                     System.out.println("to split the array into a multidimensional one.");
                     System.out.println("\nThis is the array that is using:");
                     System.out.println("[1, 2, 3, 4, 6]");
@@ -50,7 +50,7 @@ public class Main {
                     break;
 
                 case 2:
-                    System.out.println("The Mutations algorithm take two Strings. The second parameter is");
+                    System.out.println("The Mutations algorithm takes two Strings. The second parameter is");
                     System.out.println("the letters that I want to know if the first string contains.");
                     System.out.print("\nEnter the first String: ");
 
@@ -75,7 +75,7 @@ public class Main {
                     ArrayList<Integer> arr1 = new ArrayList<>();
                     reader.nextLine();
 
-                    for (String token; (token = reader.findInLine("[0-9]+(\\.\\d+)?")) != null;)
+                    for (String token; (token = reader.findInLine("[0-9]+")) != null;)
                         arr1.add(Integer.valueOf(token));
 
                     System.out.println("Now, enter the numbers that you want to destroy:");
@@ -83,7 +83,7 @@ public class Main {
                     ArrayList<Integer> arr2 = new ArrayList<>();
                     reader.nextLine();
 
-                    for (String token; (token = reader.findInLine("[0-9]+(\\.\\d+)?")) != null;)
+                    for (String token; (token = reader.findInLine("[0-9]+")) != null;)
                         arr2.add(Integer.valueOf(token));
 
                     SeekAndDestroy sd = new SeekAndDestroy(arr1, arr2);
