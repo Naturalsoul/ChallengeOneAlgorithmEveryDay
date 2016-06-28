@@ -16,7 +16,8 @@ public class SeekAndDestroy {
     }
 
     public ArrayList<Integer> doDestroy () {
-        toSeek.stream().filter(number -> arr.indexOf(number) != -1)
+        toSeek.stream()
+                .filter(number -> arr.indexOf(number) != -1)
                 .forEach(number -> arr.remove(arr.indexOf(number)));
 
         return arr;
