@@ -16,8 +16,10 @@ public class SeekAndDestroy {
     }
 
     public ArrayList<Integer> doDestroy () {
-        for (Integer number : toSeek)
-            arr.remove(arr.indexOf(number));
+        for (Integer number : toSeek) {
+            if (arr.indexOf(number) != -1)
+                arr.remove(arr.indexOf(number));
+        }
 
         return arr;
     }
