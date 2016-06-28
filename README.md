@@ -2,11 +2,11 @@
 A list of little algorithms.
 
 ### ChunkeyMonkey :monkey_face:
-> Chunkey Monkey make an array to a multidimensional one.
+> Chunkey Monkey makes an array to a multidimensional one.
 
 ### Mutations :ghost:
-> Returns true if the string in the first element of the array contains all of the letters of the string
-> in the second element of the array.
+> Returns true if the string in the first element of the array contains all the letters of the second
+> element of the array.
 
 ### SeekAndDestroy :mag:
 > It will be provided with an initial array (the first argument in the destroyer function), followed by one or
