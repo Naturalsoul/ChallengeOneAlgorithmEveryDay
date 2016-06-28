@@ -2,6 +2,7 @@ package JavaAlgorithms;
 
 import JavaAlgorithms.Algorithms.ChunkeyMonkey;
 import JavaAlgorithms.Algorithms.Mutations;
+import JavaAlgorithms.Algorithms.SeekAndDestroy;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -66,6 +67,31 @@ public class Main {
                     System.out.println("The result is: " + mut.checkMutation());
                     break;
 
+                case 3:
+                    System.out.println("\nThe algorithm takes two arguments: The first is the numbers that You have");
+                    System.out.println("and the second is those You want to seek to destroy them in the first arguments.");
+                    System.out.println("\nEnter the firsts numbers:");
+
+                    ArrayList<Integer> arr1 = new ArrayList<>();
+                    reader.nextLine();
+
+                    for (String token; (token = reader.findInLine("[0-9]+(\\.\\d+)?")) != null;)
+                        arr1.add(Integer.valueOf(token));
+
+                    System.out.println("Now, enter the numbers that you want to destroy:");
+
+                    ArrayList<Integer> arr2 = new ArrayList<>();
+                    reader.nextLine();
+
+                    for (String token; (token = reader.findInLine("[0-9]+(\\.\\d+)?")) != null;)
+                        arr2.add(Integer.valueOf(token));
+
+                    SeekAndDestroy sd = new SeekAndDestroy(arr1, arr2);
+
+                    System.out.println("\nResult:");
+                    System.out.println(sd.doDestroy().toString() + "\n");
+                    break;
+
                 case 9:
                     System.out.println("\nSee ya!!");
                     System.exit(0);
@@ -79,6 +105,7 @@ public class Main {
         System.out.println("Hi!! :D. Choose an algorithm!");
         System.out.println("1) Chunkey Monkey.");
         System.out.println("2) Mutations.");
+        System.out.println("3) Seek and Destroy.");
         System.out.println("9) Thanks for the algorithms. Good Bye!!");
         System.out.println("--------------------");
         System.out.print("Choose an option: ");
