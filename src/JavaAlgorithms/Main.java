@@ -3,6 +3,7 @@ package JavaAlgorithms;
 import JavaAlgorithms.Algorithms.ChunkeyMonkey;
 import JavaAlgorithms.Algorithms.Mutations;
 import JavaAlgorithms.Algorithms.SeekAndDestroy;
+import JavaAlgorithms.Algorithms.WhereDoIBelong;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -92,6 +93,31 @@ public class Main {
                     System.out.println(sd.doDestroy().toString() + "\n");
                     break;
 
+                case 4:
+                    System.out.println("Returns the lowest index at which a value (second argument) should be inserted into an array");
+                    System.out.println("(first argument). The returned value is a number.");
+
+                    System.out.println("\nEnter some numbers separated with spaces:");
+                    reader.nextLine();
+
+                    ArrayList<Double> listOfNumbers = new ArrayList<>();
+
+                    for (String token; (token = reader.findInLine("[0-9]+(\\.\\d+)?")) != null;)
+                        listOfNumbers.add(Double.valueOf(token));
+
+                    System.out.println("Enter the number that you want to insert:");
+                    reader.nextLine();
+
+                    double number = 0;
+
+                    for (String token; (token = reader.findInLine("[0-9]+(\\.\\d+)?")) != null;)
+                        number = Double.parseDouble(token);
+
+                    WhereDoIBelong wdib = new WhereDoIBelong(listOfNumbers, number);
+
+                    System.out.println("\nResult: " + wdib.getIndexToIns());
+                    break;
+
                 case 9:
                     System.out.println("\nSee ya!!");
                     System.exit(0);
@@ -106,6 +132,7 @@ public class Main {
         System.out.println("1) Chunkey Monkey.");
         System.out.println("2) Mutations.");
         System.out.println("3) Seek and Destroy.");
+        System.out.println("4) Where Do I Belong.");
         System.out.println("9) Thanks for the algorithms. Good Bye!!");
         System.out.println("--------------------");
         System.out.print("Choose an option: ");
