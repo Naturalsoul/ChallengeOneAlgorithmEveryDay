@@ -5,7 +5,7 @@ import java.util.Collections;
 
 /**
  * Returns the lowest index at which a value (second argument)
- * should be inserted into an array (first argument) once it has been sorted.
+ * should be inserted into an array.
  * The returned value is a number.
  */
 
