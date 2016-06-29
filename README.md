@@ -1,5 +1,9 @@
-# JavaAlgorithms
+# Java Algorithms
 A list of little algorithms.
+
+## Attention!!
+I decide to start a challenge and write one algorithm a day!
+All days a new algorithm!!! :muscle: :smile:
 
 ### ChunkeyMonkey :monkey_face:
 > Chunkey Monkey makes an array to a multidimensional one.
