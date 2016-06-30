@@ -27,3 +27,7 @@ A list of little algorithms.
 > System.out.println(wdib.getIndexToIns());
 > ```
 > should return 1 because it is greater than 1 (index 0), but less than 2 (index 1).
+
+### Diff Two Arrays :dolls:
+> It compares two lists and returns a new list with any items only found in one of the two given arrays, but not both.
+> In other words, returns the symmetric difference of the two arrays.
