@@ -1,9 +1,6 @@
 package JavaAlgorithms;
 
-import JavaAlgorithms.Algorithms.ChunkeyMonkey;
-import JavaAlgorithms.Algorithms.Mutations;
-import JavaAlgorithms.Algorithms.SeekAndDestroy;
-import JavaAlgorithms.Algorithms.WhereDoIBelong;
+import JavaAlgorithms.Algorithms.*;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -118,6 +115,11 @@ public class Main {
                     System.out.println("\nResult: " + wdib.getIndexToIns());
                     break;
 
+                case 5:
+                    DiffTwoArrays dta = new DiffTwoArrays();
+                    dta.showAlg(reader);
+                    break;
+
                 case 9:
                     System.out.println("\nSee ya!!");
                     System.exit(0);
@@ -133,6 +135,7 @@ public class Main {
         System.out.println("2) Mutations.");
         System.out.println("3) Seek and Destroy.");
         System.out.println("4) Where Do I Belong.");
+        System.out.println("5) Diff Two Arrays.");
         System.out.println("9) Thanks for the algorithms. Good Bye!!");
         System.out.println("--------------------");
         System.out.print("Choose an option: ");
