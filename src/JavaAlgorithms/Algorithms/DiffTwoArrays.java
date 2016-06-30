@@ -10,20 +10,14 @@ import java.util.Scanner;
  * In other words, returns the symmetric difference of the two arrays.
  */
 public class DiffTwoArrays {
-    private List<Integer> arr1; // This List must be always greater than arr2.
+    private List<Integer> arr1;
     private List<Integer> arr2;
 
     public DiffTwoArrays () {}
 
     private List<Integer> getSymmetricDifference (ArrayList<Integer> arr1, ArrayList<Integer> arr2) {
-
-        if (arr1.size() >= arr2.size()) {
-            this.arr1 = new ArrayList<>(arr1);
-            this.arr2 = new ArrayList<>(arr2);
-        } else {
-            this.arr1 = new ArrayList<>(arr2);
-            this.arr2 = new ArrayList<>(arr1);
-        }
+        this.arr1 = new ArrayList<>(arr1);
+        this.arr2 = new ArrayList<>(arr2);
 
         /*
          * Just remove all the elements that are equals in both arrays.
