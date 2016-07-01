@@ -13,41 +13,35 @@ import java.util.Scanner;
  */
 
 public class SearchAndReplace {
-    private String sentence;
-    private String oldWord;
-    private String newWord;
-
     public SearchAndReplace () {}
 
     private String getNewSentence (String sentence, String oldWord, String newWord) {
-        this.sentence = sentence;
-        this.oldWord = oldWord;
-        this.newWord = newWord;
+        if (!sentence.contains(oldWord) || sentence.length() < 1)
+            return sentence + " (No word has changed).";
 
-        if (!this.sentence.contains(this.oldWord))
-            return this.sentence + " (No word has changed)";
-
-        String[] arr = this.sentence.split(" ");
+        String[] arr = sentence.split(" ");
 
         for (int i = 0; i < arr.length; i++) {
-            if (arr[i].equals(this.oldWord)) {
+            if (arr[i].equals(oldWord)) {
                 if (Character.isUpperCase(arr[i].charAt(0)))
-                    this.newWord = this.newWord.substring(0, 1).toUpperCase() + this.newWord.substring(1).toLowerCase();
+                    newWord = newWord.substring(0, 1).toUpperCase() + newWord.substring(1).toLowerCase();
 
-                arr[i] = this.newWord;
+                arr[i] = newWord;
             }
         }
 
-        this.sentence = Arrays.toString(arr);
+        sentence = String.join(" ", arr);
 
-        return this.sentence;
+        return sentence;
     }
 
     public void showAlg (Scanner reader) {
         String[] arr = new String[3];
 
-        System.out.println("\nIt replace a word in a sentence and maintain the first letter capitalized if.");
+        System.out.println("\nIt replace a word in a sentence and maintain the first letter capitalized if");
         System.out.println("that the case.");
+
+        reader.nextLine();
 
         System.out.println("\nEnter the sentence that has a word that you want to replace:");
         arr[0] = reader.nextLine();
