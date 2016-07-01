@@ -31,3 +31,10 @@ A list of little algorithms.
 ### Diff Two Arrays :dolls:
 > It compares two lists and returns a new list with any items only found in one of the two given arrays, but not both.
 > In other words, returns the symmetric difference of the two arrays.
+
+### Search And Replace :memo:
+> Performs a search and replaces on the sentence using the arguments provided and returns the new sentence.
+> First argument is the sentence to perform the search and replace on.
+> Second argument is the word that you will be replacing (before).
+> Third argument is what you will be replacing the second argument with (after).
+> Preserves the case of the original word when it is replacing it. For example if you mean to replace the word "Book" with the word "dog", it will be replaced as "Dog".
