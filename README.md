@@ -6,13 +6,14 @@ I decided to start this challenge to improve as a programmer and to enter to the
 > I decide to start a challenge and write one algorithm a day!
 > All days a new algorithm!!! :muscle: :smile:
 
+#### Achievements
 - [ ] 8 Algorithms.
 - [ ] 16 Algorithms.
 - [ ] 32 Algorithms.
 - *Unlock the firsts achievements for more!*
  
 **Completed algorithms: 6**
-<br>
+
 ---------------------------------------
 
 ### ChunkeyMonkey :monkey_face:
