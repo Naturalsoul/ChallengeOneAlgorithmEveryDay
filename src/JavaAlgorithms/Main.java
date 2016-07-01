@@ -120,6 +120,11 @@ public class Main {
                     dta.showAlg(reader);
                     break;
 
+                case 6:
+                    SearchAndReplace sr = new SearchAndReplace();
+                    sr.showAlg(reader);
+                    break;
+
                 case 9:
                     System.out.println("\nSee ya!!");
                     System.exit(0);
@@ -136,6 +141,7 @@ public class Main {
         System.out.println("3) Seek and Destroy.");
         System.out.println("4) Where Do I Belong.");
         System.out.println("5) Diff Two Arrays.");
+        System.out.println("6) Search And Replace.");
         System.out.println("9) Thanks for the algorithms. Good Bye!!");
         System.out.println("--------------------");
         System.out.print("Choose an option: ");
