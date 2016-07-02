@@ -14,10 +14,10 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner reader = new Scanner (System.in);
         int option;
 
         while (true) {
+            Scanner reader = new Scanner (System.in);
             menu();
 
             try {
@@ -125,6 +125,11 @@ public class Main {
                     sr.showAlg(reader);
                     break;
 
+                case 7:
+                    PigLatin pl = new PigLatin();
+                    pl.showAlg(reader);
+                    break;
+
                 case 9:
                     System.out.println("\nSee ya!!");
                     System.exit(0);
@@ -142,6 +147,7 @@ public class Main {
         System.out.println("4) Where Do I Belong.");
         System.out.println("5) Diff Two Arrays.");
         System.out.println("6) Search And Replace.");
+        System.out.println("7) Pig Latin.");
         System.out.println("9) Thanks for the algorithms. Good Bye!!");
         System.out.println("--------------------");
         System.out.print("Choose an option: ");
