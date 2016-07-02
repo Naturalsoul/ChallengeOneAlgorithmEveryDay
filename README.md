@@ -12,7 +12,7 @@ I decided to start this challenge to improve as a programmer and to enter to the
 - [ ] 32 Algorithms.
 - *Unlock the firsts achievements for more!*
  
-**Completed algorithms: 6**
+**Completed algorithms: 7**
 
 ---------------------------------------
 
@@ -47,3 +47,7 @@ I decided to start this challenge to improve as a programmer and to enter to the
 > Second argument is the word that you will be replacing (before).
 > Third argument is what you will be replacing the second argument with (after).
 > Preserves the case of the original word when it is replacing it. For example if you mean to replace the word "Book" with the word "dog", it will be replaced as "Dog".
+
+### Pig Latin :pig:
+> Pig Latin takes the first consonant (or consonant cluster) of an English word, moves it to the end of the word and suffixes an "ay".
+> If a word begins with a vowel you just add "way" to the end.
