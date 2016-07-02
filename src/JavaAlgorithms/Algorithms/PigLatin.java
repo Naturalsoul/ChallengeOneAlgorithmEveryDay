@@ -17,12 +17,14 @@ public class PigLatin {
         String firstLetter = word.split("")[0];
         String secondLetter = word.split("")[1];
 
+        if (!firstLetter.matches("[a-zA-Z]")) return "Just words, pls :)";
+
         if (firstLetter.matches("[aeiouAEIOU]")) {
             word += "way";
         } else if (!firstLetter.matches("[aeiouAEIOU]") && !secondLetter.matches("[aeiouAEIOU]")) {
-            word = word.substring(2, word.length() - 1) + "ay";
+            word = word.substring(2, word.length() - 1) + firstLetter + secondLetter + "ay";
         } else if (!firstLetter.matches("[aeiouAEIOU]")) {
-            word = word.substring(1, word.length() - 1) + "ay";
+            word = word.substring(1, word.length() - 1) + firstLetter + "ay";
         }
 
         return word;
