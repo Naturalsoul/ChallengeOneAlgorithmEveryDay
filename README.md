@@ -7,12 +7,12 @@ I decided to start this challenge to improve as a programmer and to enter to the
 > All days a new algorithm!!! :muscle: :smile:
 
 #### Achievements
-- [ ] 8 Algorithms.
+- [x] 8 Algorithms.
 - [ ] 16 Algorithms.
 - [ ] 32 Algorithms.
 - *Unlock the firsts achievements for more!*
  
-**Completed algorithms: 7**
+**Completed algorithms: 8**
 
 ---------------------------------------
 
@@ -51,3 +51,6 @@ I decided to start this challenge to improve as a programmer and to enter to the
 ### Pig Latin :pig:
 > Pig Latin takes the first consonant (or consonant cluster) of an English word, moves it to the end of the word and suffixes an "ay".
 > If a word begins with a vowel you just add "way" to the end.
+
+### Spinal Case :skull:
+> Converts a string to spinal case. Spinal case is all-lowercase-words-joined-by-dashes.
