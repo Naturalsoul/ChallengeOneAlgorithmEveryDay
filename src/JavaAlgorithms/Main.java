@@ -130,6 +130,11 @@ public class Main {
                     pl.showAlg(reader);
                     break;
 
+                case 8:
+                    SpinalCase sc = new SpinalCase();
+                    sc.showAlg(reader);
+                    break;
+
                 case 9:
                     System.out.println("\nSee ya!!");
                     System.exit(0);
@@ -148,6 +153,7 @@ public class Main {
         System.out.println("5) Diff Two Arrays.");
         System.out.println("6) Search And Replace.");
         System.out.println("7) Pig Latin.");
+        System.out.println("8) Spinal Case.");
         System.out.println("9) Thanks for the algorithms. Good Bye!!");
         System.out.println("--------------------");
         System.out.print("Choose an option: ");
