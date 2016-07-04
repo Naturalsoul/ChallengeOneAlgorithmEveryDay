@@ -2,6 +2,7 @@ package JavaAlgorithms.Algorithms;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Scanner;
 
 /**
  * Converts the given number into a roman numeral.
@@ -43,5 +44,9 @@ public class RomanNumeralConverter {
         return finalNumber;
     }
 
-
+    public void showAlg () {
+        System.out.println("\nConverts the given number into a roman numeral.");
+        System.out.println("Number given: 95");
+        System.out.println("Result: " + this.convertToRomanNumber(95));
+    }
 }
