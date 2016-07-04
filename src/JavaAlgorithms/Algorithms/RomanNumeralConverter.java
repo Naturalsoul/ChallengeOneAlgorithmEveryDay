@@ -39,7 +39,7 @@ public class RomanNumeralConverter {
         String finalNumber;
 
         finalNumber = String.valueOf(this.rNumbers.get(Integer.valueOf(arr[0]) * 10));
-        finalNumber += String.valueOf(this.rNumbers.get(Integer.valueOf(arr[1]) * 10));
+        finalNumber += String.valueOf(this.rNumbers.get(Integer.valueOf(arr[1])));
 
         return finalNumber;
     }
