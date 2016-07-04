@@ -136,6 +136,11 @@ public class Main {
                     break;
 
                 case 9:
+                    RomanNumeralConverter rnc = new RomanNumeralConverter();
+                    rnc.showAlg();
+                    break;
+
+                case 19:
                     System.out.println("\nSee ya!!");
                     System.exit(0);
                     break;
@@ -154,7 +159,8 @@ public class Main {
         System.out.println("6) Search And Replace.");
         System.out.println("7) Pig Latin.");
         System.out.println("8) Spinal Case.");
-        System.out.println("9) Thanks for the algorithms. Good Bye!!");
+        System.out.println("9) Roman Numeral Converter.");
+        System.out.println("19) Thanks for the algorithms. Good Bye!!");
         System.out.println("--------------------");
         System.out.print("Choose an option: ");
     }
