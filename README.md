@@ -54,3 +54,6 @@ I decided to start this challenge to improve as a programmer and to enter to the
 
 ### Spinal Case :skull:
 > Converts a string to spinal case. Spinal case is all-lowercase-words-joined-by-dashes.
+
+### Roman Numeral Converter :nine:
+> Converts the given number into a roman numeral.
