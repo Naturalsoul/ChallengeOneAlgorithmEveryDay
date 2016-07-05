@@ -12,7 +12,7 @@ I decided to start this challenge to improve as a programmer and to enter to the
 - [ ] 32 Algorithms.
 - *Unlock the firsts achievements for more!*
  
-**Completed algorithms: 8**
+**Completed algorithms: 10**
 
 ---------------------------------------
 
@@ -57,3 +57,7 @@ I decided to start this challenge to improve as a programmer and to enter to the
 
 ### Roman Numeral Converter :nine:
 > Converts the given number into a roman numeral.
+
+### Fibonacci's Odd Sum :herb:
+> Return's the sum of all odd Fibonacci numbers up to and including the passed number if it is a Fibonacci number.
+> As an example, passing 4 to the function should return 5 because all the odd Fibonacci numbers under 4 are 1, 1, and 3.
