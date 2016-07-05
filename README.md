@@ -59,5 +59,5 @@ I decided to start this challenge to improve as a programmer and to enter to the
 > Converts the given number into a roman numeral.
 
 ### Fibonacci's Odd Sum :herb:
-> Return's the sum of all odd Fibonacci numbers up to and including the passed number if it is a Fibonacci number.
+> Returns the sum of all odd Fibonacci numbers up to and including the passed number if it is a Fibonacci number.
 > As an example, passing 4 to the function should return 5 because all the odd Fibonacci numbers under 4 are 1, 1, and 3.
