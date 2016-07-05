@@ -140,6 +140,11 @@ public class Main {
                     rnc.showAlg();
                     break;
 
+                case 10:
+                    FibonacciOddSum fos = new FibonacciOddSum();
+                    fos.showAlg(reader);
+                    break;
+
                 case 19:
                     System.out.println("\nSee ya!!");
                     System.exit(0);
@@ -160,6 +165,7 @@ public class Main {
         System.out.println("7) Pig Latin.");
         System.out.println("8) Spinal Case.");
         System.out.println("9) Roman Numeral Converter.");
+        System.out.println("10) Fibonacci's Odd Sum.");
         System.out.println("19) Thanks for the algorithms. Good Bye!!");
         System.out.println("--------------------");
         System.out.print("Choose an option: ");
