@@ -12,7 +12,7 @@ I decided to start this challenge to improve as a programmer and to enter to the
 - [ ] 32 Algorithms.
 - *Unlock the firsts achievements for more!*
  
-**Completed algorithms: 10**
+**Completed algorithms: 11**
 
 ---------------------------------------
 
@@ -61,3 +61,12 @@ I decided to start this challenge to improve as a programmer and to enter to the
 ### Fibonacci's Odd Sum :herb:
 > Returns the sum of all odd Fibonacci numbers up to and including the passed number if it is a Fibonacci number.
 > As an example, passing 4 to the function should return 5 because all the odd Fibonacci numbers under 4 are 1, 1, and 3.
+
+### Sum All Primes :one:
+> Sums all the prime numbers up to and including the provided number.
+> For example:
+> ```java
+> SumAllPrimes sap = new SumAllPrimes();
+> System.out.println("Result: " + sap.getPrimeSum(10));
+> ```
+> Should return 17 'cause the sum of 2, 3 and 7 is 17.
