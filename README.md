@@ -63,7 +63,7 @@ I decided to start this challenge to improve as a programmer and to enter to the
 > As an example, passing 4 to the function should return 5 because all the odd Fibonacci numbers under 4 are 1, 1, and 3.
 
 ### Sum All Primes :one:
-> Sums all the prime numbers up to and including the provided number.
+> Sums all the prime numbers up to and including the provided number if it is a prime.
 > For example:
 > ```java
 > SumAllPrimes sap = new SumAllPrimes();
