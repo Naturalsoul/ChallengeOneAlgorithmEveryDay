@@ -21,6 +21,8 @@ public class SumAllPrimes {
     }
 
     private int getPrimeSum (int number) {
+        if (number < 2) return 0;
+
         ArrayList<Integer> arr = new ArrayList<>();
         int sum = 0;
 
@@ -34,7 +36,7 @@ public class SumAllPrimes {
             }
         }
 
-        return sum;
+        return sum - 1;
     }
 
     public void showAlg (Scanner reader) {
@@ -46,6 +48,6 @@ public class SumAllPrimes {
 
         number = Integer.valueOf(reader.findInLine("[0-9]+"));
 
-        System.out.println("\nResult: " + this.isPrime(number));
+        System.out.println("\nResult: " + this.getPrimeSum(number));
     }
 }
