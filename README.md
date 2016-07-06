@@ -69,4 +69,4 @@ I decided to start this challenge to improve as a programmer and to enter to the
 > SumAllPrimes sap = new SumAllPrimes();
 > System.out.println("Result: " + sap.getPrimeSum(10));
 > ```
-> Should return 17 'cause the sum of 2, 3 and 7 is 17.
+> Should return 17 'cause the sum of 2, 3, 5 and 7 is 17.
