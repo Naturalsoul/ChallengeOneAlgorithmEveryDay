@@ -1,9 +1,10 @@
 package JavaAlgorithms.Algorithms;
 
 import java.util.ArrayList;
+import java.util.Scanner;
 
 /**
- * Sum all the prime numbers up to and including the provided number.
+ * Sums all the prime numbers up to and including the provided number.
  */
 
 public class SumAllPrimes {
@@ -34,5 +35,17 @@ public class SumAllPrimes {
         }
 
         return sum;
+    }
+
+    public void showAlg (Scanner reader) {
+        int number;
+
+        System.out.println("\nSums all the prime numbers up to and including the provided number.");
+        System.out.print("Enter a number: ");
+        reader.nextLine();
+
+        number = Integer.valueOf(reader.findInLine("[0-9]+"));
+
+        System.out.println("\nResult: " + this.isPrime(number));
     }
 }
