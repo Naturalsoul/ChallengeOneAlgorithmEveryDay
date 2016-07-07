@@ -1,6 +1,7 @@
 package JavaAlgorithms.Algorithms;
 
 import java.util.ArrayList;
+import java.util.Scanner;
 
 /**
  * Finds the smallest common multiple of the provided parameters that can be evenly divided
@@ -21,7 +22,7 @@ public class SmallestCommonMultiple {
 
     public SmallestCommonMultiple () {}
 
-    private int getSmallestCommonMultiple (int[] numbers) {
+    private int getSmallestCommonMultiple (Integer[] numbers) {
         boolean aPossibleSCM = false;
 
         if (numbers.length < 2) return 0;
@@ -56,5 +57,24 @@ public class SmallestCommonMultiple {
         }
 
         return scm;
+    }
+
+    public void showAlg (Scanner reader) {
+        Integer[] arr = new Integer[2];
+
+        System.out.println("\nFinds the smallest common multiple of the provided parameters that can be evenly divided");
+        System.out.println("by both, as well as by all sequential numbers in the range between these parameters.");
+
+        System.out.print("\nEnter the first number: ");
+        reader.nextLine();
+
+        arr[0] = Integer.valueOf(reader.findInLine("[0-9]+"));
+
+        System.out.print("Enter the second number: ");
+        reader.nextLine();
+
+        arr[1] = Integer.valueOf(reader.findInLine("[0-9]+"));
+
+        System.out.println("\nResult: " + this.getSmallestCommonMultiple(arr));
     }
 }
