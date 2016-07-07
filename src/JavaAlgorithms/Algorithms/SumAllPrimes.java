@@ -46,7 +46,11 @@ public class SumAllPrimes {
         System.out.print("Enter a number: ");
         reader.nextLine();
 
-        number = Integer.valueOf(reader.findInLine("[0-9]+"));
+        try {
+            number = Integer.valueOf(reader.findInLine("[0-9]+"));
+        } catch (Exception ex) {
+            number = 0;
+        }
 
         System.out.println("\nResult: " + this.getPrimeSum(number));
     }
