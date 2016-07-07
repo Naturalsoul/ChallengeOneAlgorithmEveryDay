@@ -70,3 +70,8 @@ I decided to start this challenge to improve as a programmer and to enter to the
 > System.out.println("Result: " + sap.getPrimeSum(10));
 > ```
 > Should return 17 'cause the sum of 2, 3, 5 and 7 is 17.
+
+### Smallest Common Multiple :mouse2:
+> Finds the smallest common multiple of the provided parameters that can be evenly divided by both, as well as by all sequential numbers in the range between these parameters.
+> The range will be an array of two numbers that will not necessarily be in numerical order.
+> e.g. for 1 and 3 - find the smallest common multiple of both 1 and 3 that is evenly divisible by all numbers between 1 and 3.
