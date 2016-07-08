@@ -155,6 +155,11 @@ public class Main {
                     scm.showAlg(reader);
                     break;
 
+                case 13:
+                    FriendlyNumbers fn = new FriendlyNumbers();
+                    fn.showAlg(reader);
+                    break;
+
                 case 19:
                     System.out.println("\nSee ya!!");
                     System.exit(0);
@@ -178,6 +183,7 @@ public class Main {
         System.out.println("10) Fibonacci's Odd Sum.");
         System.out.println("11) Sum All Primes.");
         System.out.println("12) Smallest Common Multiple.");
+        System.out.println("13) Friendly Numbers.");
         System.out.println("19) Thanks for the algorithms. Good Bye!!");
         System.out.println("--------------------");
         System.out.print("Choose an option: ");
