@@ -1,5 +1,7 @@
 package JavaAlgorithms.Algorithms;
 
+import java.util.Scanner;
+
 /**
  * A couple of numbers m and n are called friendly (or known as a friendly couple), if the sum of all divisors of m (excluding m) is equal to the
  * number n, and the sum of all divisors of the number n (excluding n) is equal to m (with m ≠ n).
@@ -17,7 +19,9 @@ package JavaAlgorithms.Algorithms;
 public class FriendlyNumbers {
     public FriendlyNumbers () {}
 
-    private boolean areFriendlyNumbers (int[] arr) {
+    private boolean areFriendlyNumbers (Integer[] arr) {
+        if (arr[0] < 1 && arr[1] < 1) return false;
+
         int sum = 0;
 
         for (int i = 1; i < arr[0]; i++) {
@@ -39,5 +43,32 @@ public class FriendlyNumbers {
         }
 
         return sum == arr[0];
+    }
+
+    public void showAlg (Scanner reader) {
+        System.out.println("\nA couple of numbers m and n are called friendly (or known as a friendly couple), if the sum of all divisors of m (excluding m) is equal to the");
+        System.out.println("number n, and the sum of all divisors of the number n (excluding n) is equal to m (with m ≠ n).");
+
+        System.out.print("\nEnter the first number: ");
+        reader.nextLine();
+
+        Integer[] arr = new Integer[2];
+
+        try {
+            arr[0] = Integer.valueOf(reader.findInLine("[0-9]+"));
+        } catch (Exception ex) {
+            arr[0] = 0;
+        }
+
+        System.out.print("Enter the second number: ");
+        reader.nextLine();
+
+        try {
+            arr[1] = Integer.valueOf(reader.findInLine("[0-9]+"));
+        } catch (Exception ex) {
+            arr[1] = 0;
+        }
+
+        System.out.println("\nResult: " + this.areFriendlyNumbers(arr));
     }
 }
