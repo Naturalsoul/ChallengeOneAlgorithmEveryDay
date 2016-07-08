@@ -12,7 +12,7 @@ I decided to start this challenge to improve as a programmer and to enter to the
 - [ ] 32 Algorithms.
 - *Unlock the firsts achievements for more!*
  
-**Completed algorithms: 12**
+**Completed algorithms: 13**
 
 ---------------------------------------
 
@@ -75,3 +75,13 @@ I decided to start this challenge to improve as a programmer and to enter to the
 > Finds the smallest common multiple of the provided parameters that can be evenly divided by both, as well as by all sequential numbers in the range between these parameters.
 > The range will be an array of two numbers that will not necessarily be in numerical order.
 > e.g. for 1 and 3 - find the smallest common multiple of both 1 and 3 that is evenly divisible by all numbers between 1 and 3.
+
+### Friendly Numbers :cat: + :dog:
+> A couple of numbers m and n are called friendly (or known as a friendly couple), if the sum of all divisors of m (excluding m) is equal to the<br>
+> number n, and the sum of all divisors of the number n (excluding n) is equal to m (with m ≠ n).<br><br>
+> For example, the numbers 220 and 284 are a friendly couple because the unique numbers<br>
+> that divide accurately 220 are 1, 2, 4, 5, 10, 11, 20, 22, 44, 55 and 110, and:<br>
+>  1 + 2 + 4 + 5 + 10 + 11 + 20 + 22 + 44 + 55 + 110 = 284<br><br>
+> Therefore, 220 is a friendly number. The only numbers that divide exactly 284 are 1, 2, 4, 71, and 142 and:<br>
+>  1 + 2 + 4 + 71 + 142 = 220<br>
+> Therefore, 284 is a friendly number.
