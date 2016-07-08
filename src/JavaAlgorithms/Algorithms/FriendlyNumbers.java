@@ -1,5 +1,6 @@
 package JavaAlgorithms.Algorithms;
 
+import java.util.Objects;
 import java.util.Scanner;
 
 /**
@@ -20,7 +21,7 @@ public class FriendlyNumbers {
     public FriendlyNumbers () {}
 
     private boolean areFriendlyNumbers (Integer[] arr) {
-        if (arr[0] < 1 && arr[1] < 1) return false;
+        if (arr[0] < 1 || arr[1] < 1 || Objects.equals(arr[0], arr[1])) return false;
 
         int sum = 0;
 
