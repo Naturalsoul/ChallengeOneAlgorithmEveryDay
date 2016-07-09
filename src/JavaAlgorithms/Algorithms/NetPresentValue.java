@@ -1,6 +1,7 @@
 package JavaAlgorithms.Algorithms;
 
 import java.util.ArrayList;
+import java.util.Scanner;
 
 /**
  * In finance, the net present value is an indicator of how profitable will be a project.
@@ -28,7 +29,7 @@ public class NetPresentValue {
             formattedData.add(data.get(0) * -1);
         }
 
-        if (data.get(0) == 0) {
+        if (data.get(0) == 0 || data.get(1) == 0) {
             npvValues.add(0);
             return npvValues;
         }
@@ -51,5 +52,38 @@ public class NetPresentValue {
         }
 
         return npvValues;
+    }
+
+    public void showAlg (Scanner reader) {
+        ArrayList<Integer> arr = new ArrayList<>();
+        ArrayList<Integer> npvValues;
+
+        System.out.println("\nIn finance, the net present value is an indicator of how profitable will be a project.");
+        System.out.println("\nIs calculated adding the flows of money each month divided by (1+r)^n,");
+        System.out.println("where n is the number of the month and r is the rate of monthly discount, and subtracting the initial investment.");
+        System.out.print("\nEnter the initial investment: $");
+        reader.nextLine();
+
+        try {
+            arr.add(Integer.valueOf(reader.findInLine("[0-9]+")));
+        } catch (Exception ex) {
+            arr.add(0);
+        }
+
+        System.out.print("Enter the rate of monthly discount: %");
+        reader.nextLine();
+
+        try {
+            arr.add(Integer.valueOf(reader.findInLine("[0-9]+")));
+        } catch (Exception ex) {
+            arr.add(0);
+        }
+
+        System.out.println("\nResult:");
+        npvValues = this.getNPV(arr);
+
+        for (int i = 0; i < npvValues.size(); i ++) {
+            System.out.println((i + 1) + "º Month: " + npvValues.get(i));
+        }
     }
 }
