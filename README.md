@@ -87,10 +87,10 @@ I decided to start this challenge to improve as a programmer and to enter to the
 > Therefore, 284 is a friendly number.
 
 ### Net Present Value :dollar:
-> In finance, the net present value is an indicator of how profitable will be a project.<br>
+> In finance, the net present value is an indicator of how profitable will be a project.<br><br>
 > Is calculated adding the flows of money each month divided by (1+r)^n,
-> where n is the number of the month and r is the rate of monthly discount, and subtracting the initial investment.<br>
+> where n is the number of the month and r is the rate of monthly discount, and subtracting the initial investment.<br><br>
 > For example, in a project in which the initial investment is $900, money flows for the first four months are
-> $550, $230 and $341 $190, and the monthly discount rate is 4%, the net present value is:<br>
-> NPV = −900+ (550/(1+0.04)^1) + (230(1+0.04)^2) + (341(1+0.04)^3) + (190(1+0.04)^4).<br>
+> $550, $230 and $341 $190, and the monthly discount rate is 4%, the net present value is:<br><br>
+> NPV = −900+ (550/(1+0.04)^1) + (230(1+0.04)^2) + (341(1+0.04)^3) + (190(1+0.04)^4).<br><br>
 > If the NPV gives negative, then it is not suitable to begin the project.
