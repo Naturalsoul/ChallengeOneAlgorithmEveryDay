@@ -12,7 +12,7 @@ import java.util.Scanner;
  * For example, in a project in which the initial investment is $900, money flows for the first four months are
  * $550, $230 and $341 $190, and the monthly discount rate is 4%, the net present value is:
  *
- * NPV = −900+ (550/(1+0.04)^1) + (230(1+0.04)^2) + (341(1+0.04)^3) + (190(1+0.04)^4).
+ * NPV = −900+ (550 / (1+0.04)^1) + (230 / (1+0.04)^2) + (341 / (1+0.04)^3) + (190 / (1+0.04)^4).
  *
  * If the NPV gives negative, then it is not suitable to begin the project.
  */
