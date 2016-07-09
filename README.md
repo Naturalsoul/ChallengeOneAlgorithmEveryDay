@@ -12,7 +12,7 @@ I decided to start this challenge to improve as a programmer and to enter to the
 - [ ] 32 Algorithms.
 - *Unlock the firsts achievements for more!*
  
-**Completed algorithms: 13**
+**Completed algorithms: 14**
 
 ---------------------------------------
 
