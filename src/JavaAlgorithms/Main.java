@@ -160,6 +160,11 @@ public class Main {
                     fn.showAlg(reader);
                     break;
 
+                case 14:
+                    NetPresentValue npv = new NetPresentValue();
+                    npv.showAlg(reader);
+                    break;
+
                 case 19:
                     System.out.println("\nSee ya!!");
                     System.exit(0);
@@ -184,6 +189,7 @@ public class Main {
         System.out.println("11) Sum All Primes.");
         System.out.println("12) Smallest Common Multiple.");
         System.out.println("13) Friendly Numbers.");
+        System.out.println("14) Net Present Values.");
         System.out.println("19) Thanks for the algorithms. Good Bye!!");
         System.out.println("--------------------");
         System.out.print("Choose an option: ");
