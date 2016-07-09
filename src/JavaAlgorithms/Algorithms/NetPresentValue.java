@@ -20,30 +20,30 @@ import java.util.Scanner;
 public class NetPresentValue {
     public NetPresentValue () {}
 
-    private ArrayList<Integer> getNPV (ArrayList<Integer> data) {
-        ArrayList<Integer> npvValues = new ArrayList<>();
-        ArrayList<Integer> formattedData = new ArrayList<>();
-        int sum = 0;
+    private ArrayList<Double> getNPV (ArrayList<Integer> data) {
+        ArrayList<Double> npvValues = new ArrayList<>();
+        ArrayList<Double> formattedData = new ArrayList<>();
+        double sum = 0;
 
         if (data.get(0) > 0) {
-            formattedData.add(data.get(0) * -1);
+            formattedData.add((double) (data.get(0) * -1));
         }
 
         if (data.get(0) == 0 || data.get(1) == 0) {
-            npvValues.add(0);
+            npvValues.add(0.0);
             return npvValues;
         }
 
-        formattedData.add(data.get(1) / 100);
+        formattedData.add((double) data.get(1) / 100);
 
         data.remove(0);
-        data.remove(1);
+        data.remove(0);
 
         for (int i = 0; i < data.size(); i++) {
             if (sum == 0) {
-                sum = formattedData.get(0) + (data.get(i) / (1 + formattedData.get(1)) ^ i + 1);
+                sum = formattedData.get(0) + (data.get(i) / (1 + formattedData.get(1)));
             } else {
-                sum += data.get(i) / (1 + formattedData.get(1) ^ i + 1);
+                sum += (data.get(i) / (Math.pow(1 + formattedData.get(1), (i + 1))));
             }
 
             npvValues.add(sum);
@@ -56,7 +56,7 @@ public class NetPresentValue {
 
     public void showAlg (Scanner reader) {
         ArrayList<Integer> arr = new ArrayList<>();
-        ArrayList<Integer> npvValues;
+        ArrayList<Double> npvValues;
 
         System.out.println("\nIn finance, the net present value is an indicator of how profitable will be a project.");
         System.out.println("\nIs calculated adding the flows of money each month divided by (1+r)^n,");
@@ -79,11 +79,22 @@ public class NetPresentValue {
             arr.add(0);
         }
 
-        System.out.println("\nResult:");
+        for (int i = 0; i < 5; i++) {
+            System.out.print("Flow month " + (i + 1) + ": $");
+            reader.nextLine();
+
+            try {
+                arr.add(Integer.valueOf(reader.findInLine("[0-9]+")));
+            } catch (Exception ex) {
+                arr.add(1);
+            }
+        }
+
+        System.out.println("\nResults:");
         npvValues = this.getNPV(arr);
 
         for (int i = 0; i < npvValues.size(); i ++) {
-            System.out.println((i + 1) + "º Month: " + npvValues.get(i));
+            System.out.println((i + 1) + "º Month: " + String.format("%.2f", npvValues.get(i)));
         }
     }
 }
