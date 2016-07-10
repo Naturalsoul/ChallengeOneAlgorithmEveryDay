@@ -94,3 +94,7 @@ I decided to start this challenge to improve as a programmer and to enter to the
 > $550, $230 and $341 $190, and the monthly discount rate is 4%, the net present value is:<br><br>
 > NPV = −900 + (550 / (1+0.04)^1) + (230 / (1+0.04)^2) + (341 / (1+0.04)^3) + (190 / (1+0.04)^4).<br><br>
 > If the NPV gives negative, then it is not suitable to begin the project.
+
+### Harmonic Mean :heavy_division_sign:
+> The harmonic mean of a sequence of n real numbers x1, x2,..., xn is defined as:<br>
+> H = n / ( (1 / x1) + (1/ x2) + (1 / x3) + … + (1 / xn) )
