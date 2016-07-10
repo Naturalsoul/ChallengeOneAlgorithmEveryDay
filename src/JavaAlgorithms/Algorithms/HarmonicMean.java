@@ -19,7 +19,7 @@ public class HarmonicMean {
 
         arr.remove(0);
 
-        for (Integer number : arr) {
+        for (double number : arr) {
             sum += (1 / number);
         }
 
@@ -39,7 +39,7 @@ public class HarmonicMean {
         try {
             arr.add(Integer.valueOf(reader.findInLine("[1-9]+")));
         } catch (Exception ex) {
-            arr.add(1);
+            arr.add(0);
         }
 
         for (int i = 0; i < arr.get(0); i++) {
