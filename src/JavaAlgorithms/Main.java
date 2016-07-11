@@ -170,6 +170,11 @@ public class Main {
                     hm.showAlg(reader);
                     break;
 
+                case 16:
+                    FoodMachine fm = new FoodMachine();
+                    fm.showAlg(reader);
+                    break;
+
                 case 19:
                     System.out.println("\nSee ya!!");
                     System.exit(0);
@@ -196,6 +201,7 @@ public class Main {
         System.out.println("13) Friendly Numbers.");
         System.out.println("14) Net Present Values.");
         System.out.println("15) Harmonic Mean.");
+        System.out.println("16) Food Machine.");
         System.out.println("19) Thanks for the algorithms. Good Bye!!");
         System.out.println("--------------------");
         System.out.print("Choose an option: ");
