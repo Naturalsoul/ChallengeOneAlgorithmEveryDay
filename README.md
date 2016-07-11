@@ -8,11 +8,11 @@ I decided to start this challenge to improve as a programmer and to enter to the
 
 #### Achievements
 - [x] 8 Algorithms.
-- [ ] 16 Algorithms.
+- [x] 16 Algorithms.
 - [ ] 32 Algorithms.
 - *Unlock the firsts achievements for more!*
  
-**Completed algorithms: 15**
+**Completed algorithms: 16**
 
 ---------------------------------------
 
@@ -98,3 +98,7 @@ I decided to start this challenge to improve as a programmer and to enter to the
 ### Harmonic Mean :heavy_division_sign:
 > The harmonic mean of a sequence of n real numbers x1, x2,..., xn is defined as:<br>
 > H = n / ( (1 / x1) + (1/ x2) + (1 / x3) + … + (1 / xn) )
+
+### Food Machine :rice_ball:
+> A food machine has products of three types, A, B and C, which are respectively worth $270, $340 and $390.
+> The machine accepts and gives of returned $10, $50 and $100 coins.
