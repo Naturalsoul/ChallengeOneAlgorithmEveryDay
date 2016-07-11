@@ -1,6 +1,7 @@
 package JavaAlgorithms.Algorithms;
 
 import java.util.ArrayList;
+import java.util.Scanner;
 
 /**
  * A food machine has products of three types, A, B and C, which are respectively worth $270, $340 and $390.
@@ -59,5 +60,52 @@ public class FoodMachine {
         }
 
         return allCoinsToGiveBack;
+    }
+
+    public void showAlg (Scanner reader) {
+        String food;
+        ArrayList<Integer> money = new ArrayList<>();
+
+        System.out.println("\nA food machine has products of three types, A, B and C, which are respectively worth $270, $340 and $390.");
+        System.out.println("The machine accepts and gives of returned $10, $50 and $100 coins.");
+        System.out.println("\nMenu ------");
+        System.out.println("A) Apple.");
+        System.out.println("B) Coffee.");
+        System.out.println("C) Mocaccino.");
+        System.out.println("------");
+
+        System.out.print("Select a product: ");
+        reader.nextLine();
+
+        food = reader.findInLine("[ABCabc]");
+
+        System.out.print("Amount of coins of $100: ");
+        reader.nextLine();
+
+        try {
+            money.add(Integer.valueOf(reader.findInLine("[0-9]+")));
+        } catch (Exception ex) {
+            money.add(0);
+        }
+
+        System.out.print("Amount of coins of $50: ");
+        reader.nextLine();
+
+        try {
+            money.add(Integer.valueOf(reader.findInLine("[0-9]+")));
+        } catch (Exception ex) {
+            money.add(0);
+        }
+
+        System.out.print("Amount of coins of $10: ");
+        reader.nextLine();
+
+        try {
+            money.add(Integer.valueOf(reader.findInLine("[0-9]+")));
+        } catch (Exception ex) {
+            money.add(0);
+        }
+
+        System.out.println("Change: " + this.buyFood(food, money));
     }
 }
