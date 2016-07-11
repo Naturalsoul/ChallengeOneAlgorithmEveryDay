@@ -16,7 +16,9 @@ public class FoodMachine {
         int sum = (100 * money.get(0)) + (50 * money.get(1)) + (10 * money.get(2));
 
         if (sum < 1) {
-            change.add(0);
+            for (int i = 0; i < 3; i++)
+                change.add(0);
+
             return change;
         }
 
@@ -34,7 +36,9 @@ public class FoodMachine {
                 break;
 
             default:
-                change.add(0);
+                for (int i = 0; i < 3; i++)
+                    change.add(0);
+
                 break;
         }
 
@@ -45,10 +49,13 @@ public class FoodMachine {
         int[] coins = new int[] {100, 50, 10};
         int change = price - paid;
         int sum;
-        int p = 1;
+        int p;
         ArrayList<Integer> allCoinsToGiveBack = new ArrayList<>();
 
+        change = change < 0 ? change * -1 : change;
+
         for (int coin : coins) {
+            p = 1;
             while (true) {
                 sum = (coin * p);
                 if (sum > change) {
@@ -65,13 +72,14 @@ public class FoodMachine {
     public void showAlg (Scanner reader) {
         String food;
         ArrayList<Integer> money = new ArrayList<>();
+        ArrayList<Integer> change;
 
         System.out.println("\nA food machine has products of three types, A, B and C, which are respectively worth $270, $340 and $390.");
         System.out.println("The machine accepts and gives of returned $10, $50 and $100 coins.");
         System.out.println("\nMenu ------");
-        System.out.println("A) Apple.");
-        System.out.println("B) Coffee.");
-        System.out.println("C) Mocaccino.");
+        System.out.println("A) Apple. $270");
+        System.out.println("B) Coffee. $340");
+        System.out.println("C) Mocaccino. $390");
         System.out.println("------");
 
         System.out.print("Select a product: ");
@@ -106,6 +114,12 @@ public class FoodMachine {
             money.add(0);
         }
 
-        System.out.println("Change: " + this.buyFood(food, money));
+        System.out.println("\nChange:");
+
+        change = this.buyFood(food, money);
+
+        System.out.println("$100 coins: " + change.get(0));
+        System.out.println("$50 coins: " + change.get(1));
+        System.out.println("$10 coins: " + change.get(2));
     }
 }
