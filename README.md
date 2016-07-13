@@ -3,8 +3,9 @@
 I decided to start this challenge to improve as a programmer and to enter to the laboral market with experience :smile:
 
 ## Attention :exclamation: :exclamation:
-> I decide to start a challenge and write one algorithm a day!
-> All days a new algorithm!!! :muscle: :smile:
+> I need your help!!<br>
+> I'm running out of algorithms to perform :scream:<br>
+> and, sincerely, I have not felt much motivated, that's why I need your help, it would be very important for me.
 
 #### Achievements
 - [x] 8 Algorithms.
@@ -12,7 +13,7 @@ I decided to start this challenge to improve as a programmer and to enter to the
 - [ ] 32 Algorithms.
 - *Unlock the firsts achievements for more!*
  
-**Completed algorithms: 16**
+**Completed algorithms: 17**
 
 ---------------------------------------
 
@@ -102,3 +103,12 @@ I decided to start this challenge to improve as a programmer and to enter to the
 ### Food Machine :rice_ball:
 > A food machine has products of three types, A, B and C, which are respectively worth $270, $340 and $390.
 > The machine accepts and gives of returned $10, $50 and $100 coins.
+
+### Square Root :seedling:
+> This allows to calculate approximately the square root of a number according to the following procedure:<br><br>
+> - It takes the initial number and subtracts the first odd number (one), this result is subtracts the next<br>
+>   odd number and so on until the result of the subtraction is less than or equal to zero.<br>
+> - If the final result is equal to zero is treated in a number with whole root and will be given by the number<br<
+>   of times that became the subtraction, including zero.<br>
+> - If the result is less than zero, the number has no root perfect and the approximate result (truncated) shall<br>
+>   be given by the number of times that became the subtraction minus one.
