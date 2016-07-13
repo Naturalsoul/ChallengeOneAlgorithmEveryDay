@@ -104,7 +104,7 @@ I decided to start this challenge to improve as a programmer and to enter to the
 > A food machine has products of three types, A, B and C, which are respectively worth $270, $340 and $390.
 > The machine accepts and gives of returned $10, $50 and $100 coins.
 
-### Square Root :seedling:However, if the given maximum string length num is less than or equal to 3, then the addition of the three dots does not add to the string length in determining the truncated string.
+### Square Root :seedling:
 > This allows to calculate approximately the square root of a number according to the following procedure:<br><br>
 > - It takes the initial number and subtracts the first odd number (one), this result is subtracts the next<br>
 >   odd number and so on until the result of the subtraction is less than or equal to zero.<br>
