@@ -180,6 +180,11 @@ public class Main {
                     sq.showAlg(reader);
                     break;
 
+                case 18:
+                    TruncateAString ts = new TruncateAString();
+                    ts.showAlg(reader);
+                    break;
+
                 case 19:
                     System.out.println("\nSee ya!!");
                     System.exit(0);
@@ -208,6 +213,7 @@ public class Main {
         System.out.println("15) Harmonic Mean.");
         System.out.println("16) Food Machine.");
         System.out.println("17) Square Root.");
+        System.out.println("18) Truncate a String.");
         System.out.println("19) Thanks for the algorithms. Good Bye!!");
         System.out.println("--------------------");
         System.out.print("Choose an option: ");
