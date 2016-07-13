@@ -23,7 +23,7 @@ public class SquareRoot {
         int p = 0;
         String[] result = new String[2];
 
-        while (number <= 0) {
+        while (number > 0) {
             number -= oddNumbers;
             oddNumbers += 2;
             p++;
@@ -55,6 +55,6 @@ public class SquareRoot {
 
         String[] result = this.getSquareRoot(number);
 
-        System.out.println("Result: The number " + number + " has " + result[0] + " of " + result[1]);
+        System.out.println("\nResult: The number " + number + " has " + result[0] + " of " + result[1]);
     }
 }
