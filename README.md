@@ -108,7 +108,7 @@ I decided to start this challenge to improve as a programmer and to enter to the
 > This allows to calculate approximately the square root of a number according to the following procedure:<br><br>
 > - It takes the initial number and subtracts the first odd number (one), this result is subtracts the next<br>
 >   odd number and so on until the result of the subtraction is less than or equal to zero.<br>
-> - If the final result is equal to zero is treated in a number with whole root and will be given by the number<br<
+> - If the final result is equal to zero is treated in a number with whole root and will be given by the number<br>
 >   of times that became the subtraction, including zero.<br>
 > - If the result is less than zero, the number has no root perfect and the approximate result (truncated) shall<br>
 >   be given by the number of times that became the subtraction minus one.
