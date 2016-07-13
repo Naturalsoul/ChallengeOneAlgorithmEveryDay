@@ -2,6 +2,7 @@ package JavaAlgorithms.Algorithms;
 
 import java.util.ArrayList;
 import java.util.Scanner;
+import java.util.stream.Collectors;
 
 /**
  * Sums all the prime numbers up to and including the provided number.
@@ -10,6 +11,7 @@ import java.util.Scanner;
 public class SumAllPrimes {
     public SumAllPrimes () {}
 
+    /*
     private boolean isPrime (int number) {
         boolean isAPrimeNumber = true;
 
@@ -19,12 +21,37 @@ public class SumAllPrimes {
 
         return isAPrimeNumber;
     }
+    */
 
     private int getPrimeSum (int number) {
         if (number < 2) return 0;
 
         ArrayList<Integer> arr = new ArrayList<>();
+        ArrayList<Integer> numbersToRemove = new ArrayList<>();
         int sum = 0;
+
+        for (int i = 2; i < number; i++) {
+            arr.add(i);
+        }
+
+        for (Integer n : arr) {
+            numbersToRemove.addAll(arr.stream()
+                    .filter(n2 -> !n2.equals(n) && n2 % n == 0)
+                    .collect(Collectors.toList()));
+        }
+
+        numbersToRemove.stream()
+                .filter(n -> arr.indexOf(n) != -1)
+                .forEach(n -> arr.remove(arr.indexOf(n)));
+
+        for (Integer n : arr) {
+            sum += n;
+        }
+
+        return sum;
+
+        /*
+         * This is the old method. It's slower.
 
         for (Integer i = 0; i <= number; i++) {
             arr.add(i);
@@ -37,6 +64,7 @@ public class SumAllPrimes {
         }
 
         return sum - 1;
+        */
     }
 
     public void showAlg (Scanner reader) {
