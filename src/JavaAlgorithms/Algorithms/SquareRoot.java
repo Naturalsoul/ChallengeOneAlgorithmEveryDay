@@ -1,5 +1,7 @@
 package JavaAlgorithms.Algorithms;
 
+import java.util.Scanner;
+
 /**
  * This allows to calculate approximately the square root of a number according to the following procedure:
  *
@@ -36,5 +38,23 @@ public class SquareRoot {
         result[1] = String.valueOf(p);
 
         return result;
+    }
+
+    public void showAlg (Scanner reader) {
+        int number;
+
+        System.out.println("\nThis allows to calculate approximately the square root of a number.");
+        System.out.print("Enter a number: ");
+        reader.nextLine();
+
+        try {
+            number = Integer.valueOf(reader.findInLine("[0-9]+"));
+        } catch (Exception ex) {
+            number = 1;
+        }
+
+        String[] result = this.getSquareRoot(number);
+
+        System.out.println("Result: The number " + number + " has " + result[0] + " of " + result[1]);
     }
 }
