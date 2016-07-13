@@ -37,7 +37,6 @@ public class TruncateAString {
         str = reader.nextLine();
 
         System.out.print("Enter the number of character you want to keep: ");
-        reader.nextLine();
 
         try {
             num = Integer.valueOf(reader.findInLine("[0-9]+"));
