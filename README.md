@@ -13,7 +13,7 @@ I decided to start this challenge to improve as a programmer and to enter to the
 - [ ] 32 Algorithms.
 - *Unlock the firsts achievements for more!*
  
-**Completed algorithms: 18**
+**Completed algorithms: 19**
 
 ---------------------------------------
 
@@ -118,3 +118,6 @@ I decided to start this challenge to improve as a programmer and to enter to the
 > given maximum string length (second argument). Return the truncated string with a ... ending.<br><br>
 > Note that inserting the three dots to the end will add to the string length.<br><br>
 > However, if the given maximum string length num is less than or equal to 3, then the addition of the three dots does not add to the string length in determining the truncated string.
+
+### Confirm the Ending :new:
+> Check if a string (first argument, str) ends with the given target string (second argument, target).
