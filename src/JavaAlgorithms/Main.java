@@ -190,6 +190,11 @@ public class Main {
                     ce.showAlg(reader);
                     break;
 
+                case 20:
+                    FactorializeANumber fan = new FactorializeANumber();
+                    fan.showAlg(reader);
+                    break;
+
                 case 29:
                     System.out.println("\nSee ya!!");
                     System.exit(0);
@@ -220,6 +225,7 @@ public class Main {
         System.out.println("17) Square Root.");
         System.out.println("18) Truncate a String.");
         System.out.println("19) Confirm The Ending.");
+        System.out.println("20) Factorialize a Number.");
         System.out.println("29) Thanks for the algorithms. Good Bye!!");
         System.out.println("--------------------");
         System.out.print("Choose an option: ");
