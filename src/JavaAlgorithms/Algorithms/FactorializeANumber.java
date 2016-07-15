@@ -11,7 +11,7 @@ public class FactorializeANumber {
 
     private int getFactorial (int n) {
         if (n == 0) return 1;
-        return getFactorial(n - 1);
+        return n * getFactorial(n - 1);
     }
 
     public void showAlg (Scanner reader) {
