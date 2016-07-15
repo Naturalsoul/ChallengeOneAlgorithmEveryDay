@@ -13,7 +13,7 @@ I decided to start this challenge to improve as a programmer and to enter to the
 - [ ] 32 Algorithms.
 - *Unlock the firsts achievements for more!*
  
-**Completed algorithms: 19**
+**Completed algorithms: 20**
 
 ---------------------------------------
 
@@ -121,3 +121,6 @@ I decided to start this challenge to improve as a programmer and to enter to the
 
 ### Confirm the Ending :new:
 > Check if a string (first argument, str) ends with the given target string (second argument, target).
+
+### Factorialize a Number :arrows_clockwise:
+> Returns the factorial of the provided integer.
