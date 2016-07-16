@@ -195,6 +195,11 @@ public class Main {
                     fan.showAlg(reader);
                     break;
 
+                case 21:
+                    FindersKeepers fk = new FindersKeepers();
+                    fk.showAlg(reader);
+                    break;
+
                 case 29:
                     System.out.println("\nSee ya!!");
                     System.exit(0);
@@ -226,6 +231,7 @@ public class Main {
         System.out.println("18) Truncate a String.");
         System.out.println("19) Confirm The Ending.");
         System.out.println("20) Factorialize a Number.");
+        System.out.println("21) Finders Keepers.");
         System.out.println("29) Thanks for the algorithms. Good Bye!!");
         System.out.println("--------------------");
         System.out.print("Choose an option: ");
