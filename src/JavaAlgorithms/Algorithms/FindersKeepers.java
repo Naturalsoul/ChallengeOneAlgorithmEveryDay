@@ -6,8 +6,8 @@ import java.util.function.Predicate;
 import java.util.stream.Collectors;
 
 /**
- * It looks through an array (first argument) and returns the first
- * element in the array that passes a truth test (second argument).
+ * It looks through an array (first argument) and returns the
+ * elements in the array that passes a truth test (second argument).
  */
 
 public class FindersKeepers {
@@ -25,8 +25,8 @@ public class FindersKeepers {
     }
 
     public void showAlg (Scanner reader) {
-        System.out.println("\nIt looks through an array (first argument) and returns the first");
-        System.out.println("element in the array that passes a truth test (second argument).");
+        System.out.println("\nIt looks through an array (first argument) and returns the");
+        System.out.println("elements in the array that passes a truth test (second argument).");
 
         System.out.println("\nEnter some numbers separated with spaces:");
         reader.nextLine();
