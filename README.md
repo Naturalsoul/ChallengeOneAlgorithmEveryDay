@@ -13,7 +13,7 @@ I decided to start this challenge to improve as a programmer and to enter to the
 - [ ] 32 Algorithms.
 - *Unlock the firsts achievements for more!*
  
-**Completed algorithms: 20**
+**Completed algorithms: 21**
 
 ---------------------------------------
 
@@ -124,3 +124,8 @@ I decided to start this challenge to improve as a programmer and to enter to the
 
 ### Factorialize a Number :arrows_clockwise:
 > Returns the factorial of the provided integer.
+
+### Finders Keepers :thumbsup:
+> It looks through an array (first argument) and returns the<br>
+> elements in the array that passes a truth test (second argument).<br>
+> *Here, I used lambda to pass a method as a parameter.*
