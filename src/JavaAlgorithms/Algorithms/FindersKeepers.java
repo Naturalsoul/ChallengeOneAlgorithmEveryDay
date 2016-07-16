@@ -1,6 +1,9 @@
 package JavaAlgorithms.Algorithms;
 
 import java.util.ArrayList;
+import java.util.Scanner;
+import java.util.function.Predicate;
+import java.util.stream.Collectors;
 
 /**
  * It looks through an array (first argument) and returns the first
@@ -10,20 +13,31 @@ import java.util.ArrayList;
 public class FindersKeepers {
     public FindersKeepers () {}
 
-    private ArrayList<Integer> getEvenNumbers (ArrayList<Integer> numbers, Runnable checkEvenNumbers) {
+    private ArrayList<Integer> getEvenNumbers (ArrayList<Integer> numbers, Predicate<Integer> checkEvenNumbers) {
         if (numbers.size() < 1) {
             numbers.add(0);
             return numbers;
         }
 
-        ArrayList<Integer> arr = new ArrayList<>();
+        return numbers.stream()
+                .filter(checkEvenNumbers)
+                .collect(Collectors.toCollection(ArrayList::new));
+    }
 
-        for (Integer n : numbers) {
-            if (checkEvenNumbers(n)) {
-                arr.add(n);
-            }
+    public void showAlg (Scanner reader) {
+        System.out.println("\nIt looks through an array (first argument) and returns the first");
+        System.out.println("element in the array that passes a truth test (second argument).");
+
+        System.out.println("\nEnter some numbers separated with spaces:");
+        reader.nextLine();
+
+        ArrayList<Integer> numbers = new ArrayList<>();
+
+        for (String token; (token = reader.findInLine("[0-9]+")) != null;) {
+            numbers.add(Integer.valueOf(token));
         }
 
-        return arr;
+        System.out.println("\nResult:");
+        System.out.println(this.getEvenNumbers(numbers, (n) -> n % 2 == 0));
     }
 }
