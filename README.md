@@ -24,7 +24,7 @@ I decided to start this challenge to improve as a programmer and to enter to the
 > Returns true if the string in the first element of the array contains all the letters of the second
 > element of the array.
 
-### SeekAndDestroy :mag:
+### SeekAndDestroy :metal:
 > It will be provided with an initial array (the first argument in the destroyer function), followed by one or
 > more arguments. This removes all elements from the initial array that are of the same value as these arguments.
 
@@ -125,7 +125,7 @@ I decided to start this challenge to improve as a programmer and to enter to the
 ### Factorialize a Number :arrows_clockwise:
 > Returns the factorial of the provided integer.
 
-### Finders Keepers :thumbsup:
+### Finders Keepers :mag_right:
 > It looks through an array (first argument) and returns the<br>
 > elements in the array that passes a truth test (second argument).<br>
 > *Here, I used lambda to pass a method as a parameter.*
