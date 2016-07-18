@@ -22,7 +22,7 @@ public class SumAllNumbersInARange {
         return sum;
     }
 
-    private void showAlg (Scanner reader) {
+    public void showAlg (Scanner reader) {
         int[] range = new int[2];
 
         System.out.println("\nReturns the sum of those two numbers and all numbers between them.");
