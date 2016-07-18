@@ -13,7 +13,7 @@ I decided to start this challenge to improve as a programmer and to enter to the
 - [ ] 32 Algorithms.
 - *Unlock the firsts achievements for more!*
  
-**Completed algorithms: 21**
+**Completed algorithms: 22**
 
 ---------------------------------------
 
@@ -129,3 +129,7 @@ I decided to start this challenge to improve as a programmer and to enter to the
 > It looks through an array (first argument) and returns the<br>
 > elements in the array that passes a truth test (second argument).<br>
 > *Here, I used lambda to pass a method as a parameter.*
+
+### Repeat a String Repeat a String :arrows_counterclockwise:
+> Repeats a given string (first argument) num times (second argument).<br>
+> Returns an empty string if num is not a positive number.
