@@ -200,6 +200,11 @@ public class Main {
                     fk.showAlg(reader);
                     break;
 
+                case 22:
+                    RepeatAStringRepeatAString rsrs = new RepeatAStringRepeatAString();
+                    rsrs.showAlg(reader);
+                    break;
+
                 case 29:
                     System.out.println("\nSee ya!!");
                     System.exit(0);
@@ -232,6 +237,7 @@ public class Main {
         System.out.println("19) Confirm The Ending.");
         System.out.println("20) Factorialize a Number.");
         System.out.println("21) Finders Keepers.");
+        System.out.println("22) Repeat a String Repeat a String.");
         System.out.println("29) Thanks for the algorithms. Good Bye!!");
         System.out.println("--------------------");
         System.out.print("Choose an option: ");
