@@ -13,7 +13,7 @@ I decided to start this challenge to improve as a programmer and to enter to the
 - [ ] 32 Algorithms.
 - *Unlock the firsts achievements for more!*
  
-**Completed algorithms: 22**
+**Completed algorithms: 23**
 
 ---------------------------------------
 
@@ -133,3 +133,6 @@ I decided to start this challenge to improve as a programmer and to enter to the
 ### Repeat a String Repeat a String :arrows_counterclockwise:
 > Repeats a given string (first argument) num times (second argument).<br>
 > Returns an empty string if num is not a positive number.
+
+### Sum All Numbers In A Range :four: :arrow_right: :eight:
+> Returns the sum of those two numbers and all numbers between them.
