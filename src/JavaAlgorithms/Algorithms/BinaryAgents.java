@@ -1,5 +1,7 @@
 package JavaAlgorithms.Algorithms;
 
+import java.util.Scanner;
+
 /**
  * Returns a binary translated sentence of the passed English string.
  */
@@ -23,5 +25,18 @@ public class BinaryAgents {
         binaryTranslation = binaryTranslation.trim();
 
         return binaryTranslation;
+    }
+
+    public void showAlg (Scanner reader) {
+        String sentence;
+
+        System.out.println("\nReturns a binary translated sentence of the passed English string.");
+        System.out.println("\nEnter a sentence:");
+        reader.nextLine();
+
+        sentence = reader.nextLine();
+
+        System.out.println("\nResult:");
+        System.out.println(this.translateToBinary(sentence));
     }
 }
