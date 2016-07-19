@@ -12,7 +12,6 @@ public class BinaryAgents {
     private String translateToBinary (String str) {
         if (str.length() < 1) return "";
 
-        str = str.replaceAll(" ", "");
         char[] arr = str.toCharArray();
         String binaryTranslation = "";
         int charCode;
