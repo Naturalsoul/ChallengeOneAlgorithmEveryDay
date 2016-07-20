@@ -20,7 +20,7 @@ public class Palindromes {
         String[] arr;
         String reverseStr;
 
-        str = str.replaceAll("\\W+", "").toLowerCase();
+        str = str.replaceAll("[\\W_]+", "").toLowerCase();
         arr = str.split("");
 
         Collections.reverse(Arrays.asList(arr));
