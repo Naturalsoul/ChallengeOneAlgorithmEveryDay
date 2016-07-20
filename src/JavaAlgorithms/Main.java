@@ -215,6 +215,11 @@ public class Main {
                     ba.showAlg(reader);
                     break;
 
+                case 25:
+                    Palindromes p = new Palindromes();
+                    p.showAlg(reader);
+                    break;
+
                 case 29:
                     System.out.println("\nSee ya!!");
                     System.exit(0);
@@ -250,6 +255,7 @@ public class Main {
         System.out.println("22) Repeat a String Repeat a String.");
         System.out.println("23) Sum All Numbers In A Range.");
         System.out.println("24) Binary Agents.");
+        System.out.println("25) Palindromes.");
         System.out.println("29) Thanks for the algorithms. Good Bye!!");
         System.out.println("--------------------");
         System.out.print("Choose an option: ");
