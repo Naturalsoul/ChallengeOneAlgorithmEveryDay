@@ -13,7 +13,7 @@ I decided to start this challenge to improve as a programmer and to enter to the
 - [ ] 32 Algorithms.
 - *Unlock the firsts achievements for more!*
  
-**Completed algorithms: 24**
+**Completed algorithms: 25**
 
 ---------------------------------------
 
@@ -140,3 +140,8 @@ I decided to start this challenge to improve as a programmer and to enter to the
 ### Binary Agents :computer:
 > Returns a binary translated sentence of the passed English string.<br><br>
 > 1001000 1100101 1111001 100001 100001 100000 1010100 1101000 1101001 1101110 1101011 100000 1110000 1101111 1110011 1101001 1110100 1101001 1110110 1100101 100001 100000 1000101 1110110 1100101 1110010 1111001 1110100 1101000 1101001 1101110 1100111 100000 1101001 1110011 100000 1110000 1101111 1110011 1110011 1101001 1100010 1101100 1100101 100000 1110111 1101000 1101001 1101100 1100101 100000 1111001 1101111 1110101 100000 1101000 1100001 1110110 1100101 100000 1100110 1100001 1101001 1110100 1101000 100000 1101001 1101110 100000 1101001 1110100 101110 
+
+### Palindromes :last_quarter_moon_with_face: :first_quarter_moon_with_face:
+> Returns true if the given string is a palindrome. Otherwise, returns false.<br>
+> A palindrome is a word or sentence that's spelled the same way both forward 
+> and backward, ignoring punctuation, case, and spacing.
