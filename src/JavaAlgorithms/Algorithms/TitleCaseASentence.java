@@ -1,7 +1,9 @@
 package JavaAlgorithms.Algorithms;
 
+import java.util.Scanner;
+
 /**
- * Return the provided string with the first letter of each word capitalized.
+ * Returns the provided string with the first letter of each word capitalized.
  */
 
 public class TitleCaseASentence {
@@ -18,5 +20,19 @@ public class TitleCaseASentence {
         }
 
         return newStr;
+    }
+
+    public void showAlg (Scanner reader) {
+        String str;
+
+        System.out.println("\nReturns the provided string with the first letter of each word capitalized.");
+
+        System.out.println("\nEnter a sentence: ");
+        reader.nextLine();
+
+        str = reader.nextLine();
+
+        System.out.println("\nResult:");
+        System.out.println(this.getTitleCased(str));
     }
 }
