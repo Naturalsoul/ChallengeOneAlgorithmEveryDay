@@ -12,14 +12,14 @@ public class TitleCaseASentence {
     private String getTitleCased (String str) {
         if (str.length() < 1) return "";
 
-        String[] arr = str.replaceAll("[\\W_]+", " ").split(" ");
+        String[] arr = str.split(" ");
         String newStr = "";
 
         for (String word : arr) {
-            newStr += word.substring(0, 1).toUpperCase() + word.substring(1).toLowerCase();
+            newStr += word.substring(0, 1).toUpperCase() + word.substring(1).toLowerCase() + " ";
         }
 
-        return newStr;
+        return newStr.trim();
     }
 
     public void showAlg (Scanner reader) {
