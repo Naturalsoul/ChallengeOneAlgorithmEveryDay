@@ -145,3 +145,6 @@ I decided to start this challenge to improve as a programmer and to enter to the
 > Returns true if the given string is a palindrome. Otherwise, returns false.<br>
 > A palindrome is a word or sentence that's spelled the same way both forward 
 > and backward, ignoring punctuation, case, and spacing.
+
+### Title Case A Sentence :book:
+> Returns the provided string with the first letter of each word capitalized.
