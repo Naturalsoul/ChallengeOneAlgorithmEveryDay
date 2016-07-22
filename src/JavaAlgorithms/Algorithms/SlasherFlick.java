@@ -2,6 +2,7 @@ package JavaAlgorithms.Algorithms;
 
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.Scanner;
 
 /**
  * Returns the remaining elements of an array after chopping off n elements from the head.
@@ -26,5 +27,32 @@ public class SlasherFlick {
         }
 
         return arr;
+    }
+
+    public void showAlg (Scanner reader) {
+        ArrayList<Integer> arr = new ArrayList<>();
+        int howMany;
+
+        System.out.println("\nReturns the remaining elements of an array after chopping off n elements from the head.");
+        System.out.println("The head means the beginning of the array, or the zeroth index.");
+
+        System.out.println("\nEnter some numbers separated with spaces:");
+        reader.nextLine();
+
+        for (String token; (token = reader.findInLine("[0-9]+")) != null;) {
+            arr.add(Integer.valueOf(token));
+        }
+
+        System.out.println("\nEnter the quantity of numbers that you want to remove:");
+        reader.nextLine();
+
+        try {
+            howMany = Integer.valueOf(reader.findInLine("[0-9]+"));
+        } catch (Exception ex) {
+            howMany = 0;
+        }
+
+        System.out.println("\nResult:");
+        System.out.println(this.getSlashered(arr, howMany));
     }
 }
