@@ -1,7 +1,6 @@
 package JavaAlgorithms.Algorithms;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.Scanner;
 
 /**
@@ -13,20 +12,19 @@ import java.util.Scanner;
 public class SlasherFlick {
     public SlasherFlick () {}
 
-    private ArrayList<Integer> getSlashered (ArrayList<Integer> arr, int howMany) {
+    private ArrayList<Integer> getSlashed (ArrayList<Integer> arr, int howMany) {
         if (arr.size() < 1 || howMany >= arr.size()) {
             return null;
         } else if (howMany == 0) {
             return arr;
         }
 
-        Iterator<Integer> itr = arr.iterator();
+        ArrayList<Integer> resultArr = new ArrayList<>();
 
-        for (int i = 0; i < howMany; i++) {
-            itr.remove();
-        }
+        for (int i = 0; i < arr.size() - howMany; i++)
+            resultArr.add(arr.get(i));
 
-        return arr;
+        return resultArr;
     }
 
     public void showAlg (Scanner reader) {
@@ -53,6 +51,6 @@ public class SlasherFlick {
         }
 
         System.out.println("\nResult:");
-        System.out.println(this.getSlashered(arr, howMany));
+        System.out.println(this.getSlashed(arr, howMany));
     }
 }
