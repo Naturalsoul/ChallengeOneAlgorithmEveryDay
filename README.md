@@ -13,7 +13,7 @@ I decided to start this challenge to improve as a programmer and to enter to the
 - [ ] 32 Algorithms.
 - *Unlock the firsts achievements for more!*
  
-**Completed algorithms: 26**
+**Completed algorithms: 27**
 
 ---------------------------------------
 
@@ -148,3 +148,7 @@ I decided to start this challenge to improve as a programmer and to enter to the
 
 ### Title Case A Sentence :book:
 > Returns the provided string with the first letter of each word capitalized.
+
+### Slasher Flick :scissors:
+> Returns the remaining elements of an array after chopping off n elements from the head.<br>
+The head means the beginning of the array, or the zeroth index.<br>
