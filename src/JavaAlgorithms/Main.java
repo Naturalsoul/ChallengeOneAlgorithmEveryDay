@@ -225,6 +225,11 @@ public class Main {
                     tcas.showAlg(reader);
                     break;
 
+                case 27:
+                    SlasherFlick sf = new SlasherFlick();
+                    sf.showAlg(reader);
+                    break;
+
                 case 29:
                     System.out.println("\nSee ya!!");
                     System.exit(0);
@@ -262,6 +267,7 @@ public class Main {
         System.out.println("24) Binary Agents.");
         System.out.println("25) Palindromes.");
         System.out.println("26) Title Case a Sentence.");
+        System.out.println("27) Slasher Flick.");
         System.out.println("29) Thanks for the algorithms. Good Bye!!");
         System.out.println("--------------------");
         System.out.print("Choose an option: ");
