@@ -1,6 +1,7 @@
 package JavaAlgorithms.Algorithms;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Scanner;
 
 /**
@@ -20,9 +21,12 @@ public class SlasherFlick {
         }
 
         ArrayList<Integer> resultArr = new ArrayList<>();
+        int p = 1;
 
-        for (int i = 0; i < arr.size() - howMany; i++)
-            resultArr.add(arr.get(i));
+        for (Integer n : arr) {
+            if (p > howMany) resultArr.add(n);
+            p++;
+        }
 
         return resultArr;
     }
