@@ -13,7 +13,7 @@ I decided to start this challenge to improve as a programmer and to enter to the
 - [ ] 32 Algorithms.
 - *Unlock the firsts achievements for more!*
  
-**Completed algorithms: 27**
+**Completed algorithms: 28**
 
 ---------------------------------------
 
@@ -152,3 +152,8 @@ I decided to start this challenge to improve as a programmer and to enter to the
 ### Slasher Flick :scissors:
 > Returns the remaining elements of an array after chopping off n elements from the head.<br>
 The head means the beginning of the array, or the zeroth index.<br>
+
+### RoleTheDice :two: :zero:
+> Dice notation (also known as dice algebra, common dice notation, RPG dice notation, and several other titles)<br>
+> is a system to represent different combinations of dice in role-playing games using simple algebra-like notation such as 2d6+12.<br>
+> Here, you can roll a D4, D6, D8, D10, D12, D20, D30, D100.
