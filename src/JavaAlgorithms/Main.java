@@ -230,7 +230,12 @@ public class Main {
                     sf.showAlg(reader);
                     break;
 
-                case 29:
+                case 28:
+                    RoleTheDice rtd = new RoleTheDice();
+                    rtd.showAlg(reader);
+                    break;
+
+                case 33:
                     System.out.println("\nSee ya!!");
                     System.exit(0);
                     break;
@@ -268,7 +273,8 @@ public class Main {
         System.out.println("25) Palindromes.");
         System.out.println("26) Title Case a Sentence.");
         System.out.println("27) Slasher Flick.");
-        System.out.println("29) Thanks for the algorithms. Good Bye!!");
+        System.out.println("28) RoleTheDice.");
+        System.out.println("33) Thanks for the algorithms. Good Bye!!");
         System.out.println("--------------------");
         System.out.print("Choose an option: ");
     }
