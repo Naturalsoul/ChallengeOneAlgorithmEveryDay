@@ -13,7 +13,7 @@ I decided to start this challenge to improve as a programmer and to enter to the
 - [ ] 32 Algorithms.
 - *Unlock the firsts achievements for more!*
  
-**Completed algorithms: 29**
+**Completed algorithms: 30**
 
 ---------------------------------------
 
@@ -161,3 +161,8 @@ The head means the beginning of the array, or the zeroth index.<br>
 ### HTML Entries Converter :page_facing_up:
 > Converts the characters &, <, >, " (double quote), and ' (apostrophe),
 > in a string to their corresponding HTML entities.
+
+### Pythagoras :abcd:
+> This algorithm receives as input the lengths of the two sides a and b of a right triangle, and which give<br>
+> as output the length of the hypotenuse c of the triangle, given by the Pythagorean theorem:<br>
+> c² = a² + b²
