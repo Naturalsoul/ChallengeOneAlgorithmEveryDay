@@ -3,9 +3,7 @@
 I decided to start this challenge to improve as a programmer and to enter to the laboral market with experience :smile:
 
 ## Attention :exclamation: :exclamation:
-> I need your help!!<br>
-> I'm running out of algorithms to perform :scream:<br>
-> and, sincerely, I have not felt much motivated, that's why I need your help, it would be very important for me.
+> I'm almost reaching the threshold of this challenge!! :smile: :v:
 
 #### Achievements
 - [x] 8 Algorithms.
