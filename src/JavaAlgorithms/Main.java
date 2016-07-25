@@ -240,6 +240,11 @@ public class Main {
                     htmlec.showAlg(reader);
                     break;
 
+                case 30:
+                    Pythagoras py = new Pythagoras();
+                    py.showAlg(reader);
+                    break;
+
                 case 33:
                     System.out.println("\nSee ya!!");
                     System.exit(0);
@@ -280,6 +285,7 @@ public class Main {
         System.out.println("27) Slasher Flick.");
         System.out.println("28) RoleTheDice.");
         System.out.println("29) HTML Entries Converter.");
+        System.out.println("30) Pythagoras.");
         System.out.println("33) Thanks for the algorithms. Good Bye!!");
         System.out.println("--------------------");
         System.out.print("Choose an option: ");
