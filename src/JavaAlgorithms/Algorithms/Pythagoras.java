@@ -12,7 +12,7 @@ public class Pythagoras {
     public Pythagoras () {}
 
     private Double getPythagoras (double a, double b) {
-        return Math.pow(a, 2) + Math.pow(b, 2);
+        return Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2));
     }
 
     public void showAlg (Scanner reader) {
