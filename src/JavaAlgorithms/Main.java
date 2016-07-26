@@ -245,6 +245,11 @@ public class Main {
                     py.showAlg(reader);
                     break;
 
+                case 31:
+                    CollatzConjecture cc = new CollatzConjecture();
+                    cc.showAlg(reader);
+                    break;
+
                 case 33:
                     System.out.println("\nSee ya!!");
                     System.exit(0);
@@ -286,6 +291,7 @@ public class Main {
         System.out.println("28) RoleTheDice.");
         System.out.println("29) HTML Entries Converter.");
         System.out.println("30) Pythagoras.");
+        System.out.println("31) Collatz Conjecture.");
         System.out.println("33) Thanks for the algorithms. Good Bye!!");
         System.out.println("--------------------");
         System.out.print("Choose an option: ");
