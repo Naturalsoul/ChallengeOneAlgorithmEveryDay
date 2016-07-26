@@ -21,16 +21,15 @@ public class CollatzConjecture {
     public CollatzConjecture () {}
 
     private ArrayList<Integer> getCollatz (int number) {
-        if ((2 ^ 58) >= number || number == 0) {
+        if (number >= (2 ^ 58) || number == 0) {
             return new ArrayList<>(0);
         }
 
-        ArrayList<Integer> arr = new ArrayList<>(number);
+        ArrayList<Integer> arr = new ArrayList<>();
 
         while (number != 1) {
             if (number % 2 == 0) number /= 2;
-            else number *= 3 + 1;
-
+            else number = (number * 3) + 1;
             arr.add(number);
         }
 
@@ -70,6 +69,6 @@ public class CollatzConjecture {
             result += n + " ";
         }
 
-        System.out.println(result);
+        System.out.println(number + " " + result);
     }
 }
