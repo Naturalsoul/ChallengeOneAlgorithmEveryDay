@@ -11,7 +11,7 @@ I decided to start this challenge to improve as a programmer and to enter to the
 - [ ] 32 Algorithms.
 - *Unlock the firsts achievements for more!*
  
-**Completed algorithms: 30**
+**Completed algorithms: 31**
 
 ---------------------------------------
 
@@ -164,3 +164,13 @@ The head means the beginning of the array, or the zeroth index.<br>
 > This algorithm receives as input the lengths of the two sides a and b of a right triangle, and which give<br>
 > as output the length of the hypotenuse c of the triangle, given by the Pythagorean theorem:<br>
 > c² = a² + b²
+
+### Collatz Conjecture :man:
+> The sequence of Collatz of an integer is constructed in the following way:<br>
+> - If the number is even, it is divided by two;<br>
+> - If is odd, it multiplies three and adds one;<br>
+> - the succession ends upon arrival at one.<br><br>
+> The Collatz conjecture says that, starting from any number, the sequence will always reach 1.<br>
+> Despite being an affirmation to simple sight is very simple, it has not been able to demonstrate whether it is true or not.<br><br>
+> Using computers, it has been verified that the succession actually<br>
+> reaches 1 departing from any natural number less than 2^58.
