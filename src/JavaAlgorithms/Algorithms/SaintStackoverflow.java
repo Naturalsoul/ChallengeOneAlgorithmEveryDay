@@ -1,8 +1,9 @@
 package JavaAlgorithms.Algorithms;
 
-import java.awt.*;
+import java.awt.Desktop;
 import java.io.IOException;
 import java.net.URI;
+import java.util.Scanner;
 
 /**
  * Do you need something ? Stackoverflow is the answer :D !
@@ -39,5 +40,17 @@ public class SaintStackoverflow {
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+    public void showAlg (Scanner reader) {
+        String query;
+
+        System.out.println("\nDo you need something ? Stackoverflow is the answer :D !");
+        System.out.println("Enter your doubt:");
+        reader.nextLine();
+
+        query = reader.nextLine();
+
+        this.getHelp(query);
     }
 }
