@@ -8,10 +8,12 @@ I decided to start this challenge to improve as a programmer and to enter to the
 #### Achievements
 - [x] 8 Algorithms.
 - [x] 16 Algorithms.
-- [ ] 32 Algorithms.
-- *Unlock the firsts achievements for more!*
+- [x] 32 Algorithms.
+- [x] **(GOLD)** Complete one algorithm EVERY DAY.
+- [x] *(SECRET)* Take the constructive critiques and get, at least, 1 algorithm optimized.
+- [x] ***(LEGENDARY)*** YOU ROCK!! Get all the achievements!!
  
-**Completed algorithms: 31**
+**Completed algorithms: 32**
 
 ---------------------------------------
 
@@ -174,3 +176,7 @@ The head means the beginning of the array, or the zeroth index.<br>
 > Despite being an affirmation to simple sight is very simple, it has not been able to demonstrate whether it is true or not.<br><br>
 > Using computers, it has been verified that the succession actually<br>
 > reaches 1 departing from any natural number less than 2^58.
+
+### Saint Stackoverflow :star2:
+> Do you need something ? Stackoverflow is the answer :D !<br>
+> **It has two easter eggs**
