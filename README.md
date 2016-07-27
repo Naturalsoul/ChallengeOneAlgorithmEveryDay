@@ -3,7 +3,9 @@
 I decided to start this challenge to improve as a programmer and to enter to the laboral market with experience :smile:
 
 ## Attention :exclamation: :exclamation:
-> I'm almost reaching the threshold of this challenge!! :smile: :v:
+> I completed the challenge!!<br>
+> Special thanks to [@zodux](https://github.com/zodux). He helped me a lot with ideas of algorithms and, also, to motivate me.<br>
+> Happy Coding!! :smile: :v:
 
 #### Achievements
 - [x] 8 Algorithms.
