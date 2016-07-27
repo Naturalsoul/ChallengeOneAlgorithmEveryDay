@@ -256,7 +256,17 @@ public class Main {
                     break;
 
                 case 33:
-                    System.out.println("\nSee ya!!");
+                    String outro = "/**\n" +
+                            " * Thanks for check my work. I really appreciate that.\n" +
+                            " *\n" +
+                            " * Don't forget to visit my profile on GitHub and LinkedIN!\n" +
+                            " * Github: https://github.com/Naturalsoul\n" +
+                            " * LinkedIN: https://cl.linkedin.com/in/rauleduardoc\n" +
+                            " *\n" +
+                            " * Good Bye!\n" +
+                            " */";
+
+                    System.out.println("\n" + outro);
                     System.exit(0);
                     break;
             }
@@ -264,6 +274,22 @@ public class Main {
     }
 
     private static void menu () {
+        String intro = "/**\n" +
+                " * Author: Naturalsoul\n" +
+                " *\n" +
+                " * It has been interesting doing this challenge.\n" +
+                " * Some days I really felt unmotivated but I preferred to think that I'm\n" +
+                " * more than those bad feelings and thoughts. That the only real failure is\n" +
+                " * when I give up 'cause I always can continue and those \"bad things\"\n" +
+                " * are just another ingredient of success.\n" +
+                " *\n" +
+                " * I hope these algorithms and challenge can help and motivate you to do things and to grow.\n" +
+                " *\n" +
+                " * My profile on Github: https://github.com/Naturalsoul\n" +
+                " * My profile on LinkedIN: https://cl.linkedin.com/in/rauleduardoc\n" +
+                " */";
+
+        System.out.println(intro + "\n");
         System.out.println("--------------------");
         System.out.println("Hi!! :D. Choose an algorithm!");
         System.out.println("1) Chunkey Monkey.");
